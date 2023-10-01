@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
+import BlogCard from "../components/BlogCard";
+import ProductCard from "../components/ProductCard";
+import SpecialProduct from "../components/SpecialProduct";
 
 const Home = () => {
   return (
@@ -199,6 +202,95 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className="featured-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Coleccion Destacada</h3>
+            </div>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
+      <section className="famous-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="images/famous-1.webp" className="img-fluid" alt="famous" />
+                <div className="famous-content position-absolute">
+                  <h5>Big Screen</h5>
+                  <h6>Smart Watch Series 7</h6>
+                  <p>From $399 or $16.62/mo. for 24 mo.*</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="images/famous-2.webp" className="img-fluid" alt="famous" />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Studio Display</h5>
+                  <h6 className="text-dark">600 nits of brightness.</h6>
+                  <p className="text-dark">27-inch 5k Retina display</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="images/famous-3.webp" className="img-fluid" alt="famous" />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">SMARTHPHONES</h5>
+                  <h6 className="text-dark">Smartphone 13 Pro.</h6>
+                  <p className="text-dark">Now in Green. From $999.00 or $41.62/mo. for 24 mo. Footnote*</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="images/famous-3.webp" className="img-fluid" alt="famous" />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">home speakers</h5>
+                  <h6 className="text-dark">Room-filing sound</h6>
+                  <p className="text-dark">From $699 or $116.58/mo.for 12mo.*</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="special-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Productos Especiales</h3>
+            </div>
+          </div>
+          <div className="row">
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+          </div>
+        </div>
+      </section>
+      <section className="popular-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Nuestros productos populares</h3>
+            </div>
+          </div>
+          <div className="row">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
       <section className="marque-wrapper py-5">
           <div className="container-xxl">
             <div className="row">
@@ -221,9 +313,6 @@ const Home = () => {
                         <img src="images/brand-05.png" alt="brand" />
                       </div>
                       <div className="mx-4 w-25">
-                        <img src="images/brand-05.png" alt="brand" />
-                      </div>
-                      <div className="mx-4 w-25">
                         <img src="images/brand-06.png" alt="brand" />
                       </div>
                       <div className="mx-4 w-25">
@@ -239,8 +328,29 @@ const Home = () => {
           </div>
       </section>
       <section className="blog-wrapper py-5 home-wrapper-2">
-        {/* 2:18:09 */}
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Our Latest Blogs</h3>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-3">
+              <BlogCard />
+            </div>
+            <div className="col-3">
+              <BlogCard />
+            </div>
+            <div className="col-3">
+              <BlogCard />
+            </div>
+            <div className="col-3">
+              <BlogCard />
+            </div>
+          </div>
+        </div>
       </section>
+
     </>
   );
 };

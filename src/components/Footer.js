@@ -51,8 +51,7 @@ const Footer = () => {
                 </a>
                 <a
                   href="mailto:navdeepdahiya753@gmail.com"
-                  className="mt-2 d-block mb-1 text-white"
-                >
+                  className="mt-2 d-block mb-1 text-white">
                   navdeepdahiya753@gmail.com
                 </a>
               </div>
